@@ -50,3 +50,5 @@ curl -X PUT -H "Authorization: Bearer lm_mcp_api_ey232345iJkwefwefweflbmMiOiJBMw
 ## Testing in ChatGPT
 To add these apps to ChatGPT, enable [developer mode](https://platform.openai.com/docs/guides/developer-mode), and add your apps in Settings > Connectors.
 
+## Try a hosted version now
+MCP Server URL: `https://18t536mliucyeuhkkcnjdavxtyg66pgl.deployments.mcp-agent.com/sse`
