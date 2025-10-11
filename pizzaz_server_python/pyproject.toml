@@ -1,0 +1,10 @@
+[project]
+name = "pizzaz-server-python"
+version = "0.1.0"
+description = "OpenAI Apps SDK Example app"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.119.0",
+    "mcp-agent>=0.1.33",
+]
