@@ -1,0 +1,10 @@
+[project]
+name = "solar-system-server-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.119.0",
+    "mcp-agent>=0.1.34",
+]

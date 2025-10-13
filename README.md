@@ -1,54 +1,82 @@
-# Hosting OpenAI's ChatGPT App - Pizzaz MCP server (Python)
+# OpenAI Apps SDK Examples
 
-This repository contains [OpenAI's Pizzaz MCP server](https://github.com/openai/openai-apps-sdk-examples/tree/main/pizzaz_server_python) (python) with a one line change to get it hosted onto [mcp-agent cloud](https://www.mcp-agent.com/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-This enables the OpenAI Pizzaz demo application to be hosted and used by anyone.
+This repository showcases example ChatGPT Apps, each of which is already hosted for you to try out.
 
-https://github.com/user-attachments/assets/cb50700c-5650-4f12-ac2e-2eabba5c8144
+## What is a ChatGPT app?
 
-## Prerequisites
+OpenAI introduced [apps in ChatGPT via the new Apps SDK](https://openai.com/index/introducing-apps-in-chatgpt/). Apps in ChatGPT allow users to naturally converse with applications to unlock richer experiences. These apps adhere to the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro), which is an open standard for connecting AI applications to external systems.
 
-- Python 3.10+
+## What is mcp-agent cloud( MCPAC)?
 
-## Installation
+The mcp-agent cloud is a cloud platform for hosting MCP servers, MCP App servers, and MCP Agent servers. 
 
-We recommend using [uv](https://docs.astral.sh/uv/) for a fast Python package manager.
-```bash
-uv init
-uv sync
-```
+## OpenAI / ChatGPT Apps
 
-Alternatively, you can use `pip` by adding a new `requirements.txt` in `pizzaz_server_python`.
-```bash
-pip install mcp-agent
-pip install fastapi
-```
+<div align="left" style="
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  background-color: #fff;
+">
+  <img src="https://andrew-dev-s3.s3.us-east-1.amazonaws.com/chatgpt.com_c_68ed1840-477c-8329-9cd8-eac1ff333373(thumbnails).png"
+       alt="Pizzaz Logo"
+       style="flex: 0 0 240px; width: 240px; height: 240px; object-fit: cover; border-radius: 12px; margin-right: 20px;">
+  <div style="flex: 1;">
+    <h3 style="margin: 0 0 8px 0;">🍕 Pizzaz</h3>
+    <p style="margin: 4px 0;">
+      <strong>Developer:</strong> <a href="https://openai.com/">OpenAI</a>
+    </p>
+    <p style="margin: 4px 0; word-break: break-all;">
+      <strong>Url:</strong> https://18t536mliucyeuhkkcnjdavxtyg66pgl.deployments.mcp-agent.com/sse
+    </p>
+    <p style="margin: 4px 0; word-break: break-all;">
+      <strong><a href="./pizzaz_server_python">Source code</a></strong>
+    </p>
+    <p style="margin: 8px 0;">
+      An example OpenAI app that exposes a full suite of Pizzaz demo widgets so developers can experiment with UI-bearing tools in ChatGPT developer mode.
+    </p>
+  </div>
+</div>
 
-## Deploy the application
+<div align="left" style="
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  background-color: #fff;
+">
+  <img src="https://andrew-dev-s3.s3.us-east-1.amazonaws.com/chatgpt.com_c_68ed2838-81d0-832f-a85b-821bc59d5219(thumbnails).png"
+       alt="Solar System Logo"
+       style="flex: 0 0 240px; width: 240px; height: 240px; object-fit: cover; border-radius: 12px; margin-right: 20px;">
+  <div style="flex: 1;">
+    <h3 style="margin: 0 0 8px 0;">🪐 Solar System</h3>
+    <p style="margin: 4px 0;">
+      <strong>Developer:</strong> <a href="https://openai.com/">OpenAI</a>
+    </p>
+    <p style="margin: 4px 0; word-break: break-all;">
+      <strong>Url:</strong> https://1iolks0szy0x0grtu8509imb90uizpq6.deployments.mcp-agent.com/sse
+    </p>
+    <p style="margin: 4px 0; word-break: break-all;">
+      <strong><a href="./solar-system_server_python">Source code</a></strong>
+    </p>
+    <p style="margin: 8px 0;">
+      An example OpenAI app that lets users drive the 3D solar system UI from ChatGPT.
+    </p>
+  </div>
+</div>
 
-```bash
-uv run mcp-agent login
-uv run mcp-agent deploy
-```
+## Contributing
 
-Save your `mcp-agent cloud auth token` and your `app_id` for the next step.
+You are welcome to open issues or submit PRs to improve this app, however, please note that we may not review all suggestions.
 
-## Allow users to use your app with authentication
-
-Add in your `mcp-agent cloud auth token` and your `app_id` to the curl command below to turn off authentication. 
-
-Execute the command in your terminal:
-```bash
-curl -X PUT -H "Authorization: Bearer [mcp-agent cloud token]" https://mcp-agent.com/api/mcp_app/update_app -d '{"app_id": "fill-in-your-id", "unauthenticatedAccess": true}'
-```
-
-Example:
-```bash
-curl -X PUT -H "Authorization: Bearer lm_mcp_api_ey232345iJkwefwefweflbmMiOiJBMwefw0NNIn0..a2v1e8Qwef42dTqdlP.S4nCryFi737SV9WbieNasdffwef1x1asdfasdasdfmFV3jgFuLzasdefd3FxG1bmfhqcDNUgsOyF6xt-3kk-u0zdRk_dpB9wtFtkFZuWhgMKk2W0Jv8wSk2vmRLasdf9V0-eawehasdf09GwOK43dDsVQ_crCAasdfDc_PGwWKxasdfrRmBKN-7vZSts7878asdfmRyQ" https://mcp-agent.com/api/mcp_app/update_app -d '{"app_id": "app_9acdaf01-1234-dcba-abcd-1234567890", "unauthenticatedAccess": true}'
-```
-
-## Testing in ChatGPT
-To add these apps to ChatGPT, enable [developer mode](https://platform.openai.com/docs/guides/developer-mode), and add your apps in Settings > Connectors.
-
-## Try a hosted version now
-MCP Server URL: `https://18t536mliucyeuhkkcnjdavxtyg66pgl.deployments.mcp-agent.com/sse`
+## License
+This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
