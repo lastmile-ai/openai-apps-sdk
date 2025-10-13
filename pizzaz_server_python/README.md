@@ -4,6 +4,8 @@ This repository contains [OpenAI's Pizzaz MCP server](https://github.com/openai/
 
 This enables the OpenAI Pizzaz demo application to be hosted and used by anyone.
 
+https://github.com/user-attachments/assets/cb50700c-5650-4f12-ac2e-2eabba5c8144
+
 ## Prerequisites
 
 - Python 3.10+
