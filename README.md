@@ -14,65 +14,10 @@ The mcp-agent cloud is a cloud platform for hosting MCP servers, MCP App servers
 
 ## OpenAI / ChatGPT Apps
 
-<div align="left" style="
-  display: flex;
-  align-items: flex-start;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 16px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
-  background-color: #fff;
-">
-  <img src="https://andrew-dev-s3.s3.us-east-1.amazonaws.com/chatgpt.com_c_68ed1840-477c-8329-9cd8-eac1ff333373(thumbnails).png"
-       alt="Pizzaz Logo"
-       style="flex: 0 0 240px; width: 240px; height: 240px; object-fit: cover; border-radius: 12px; margin-right: 20px;">
-  <div style="flex: 1;">
-    <h3 style="margin: 0 0 8px 0;">🍕 Pizzaz</h3>
-    <p style="margin: 4px 0;">
-      <strong>Developer:</strong> <a href="https://openai.com/">OpenAI</a>
-    </p>
-    <p style="margin: 4px 0; word-break: break-all;">
-      <strong>Url:</strong> https://18t536mliucyeuhkkcnjdavxtyg66pgl.deployments.mcp-agent.com/sse
-    </p>
-    <p style="margin: 4px 0; word-break: break-all;">
-      <strong><a href="./pizzaz_server_python">Source code</a></strong>
-    </p>
-    <p style="margin: 8px 0;">
-      An example OpenAI app that exposes a full suite of Pizzaz demo widgets so developers can experiment with UI-bearing tools in ChatGPT developer mode.
-    </p>
-  </div>
-</div>
-
-<div align="left" style="
-  display: flex;
-  align-items: flex-start;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 16px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
-  background-color: #fff;
-">
-  <img src="https://andrew-dev-s3.s3.us-east-1.amazonaws.com/chatgpt.com_c_68ed2838-81d0-832f-a85b-821bc59d5219(thumbnails).png"
-       alt="Solar System Logo"
-       style="flex: 0 0 240px; width: 240px; height: 240px; object-fit: cover; border-radius: 12px; margin-right: 20px;">
-  <div style="flex: 1;">
-    <h3 style="margin: 0 0 8px 0;">🪐 Solar System</h3>
-    <p style="margin: 4px 0;">
-      <strong>Developer:</strong> <a href="https://openai.com/">OpenAI</a>
-    </p>
-    <p style="margin: 4px 0; word-break: break-all;">
-      <strong>Url:</strong> https://1iolks0szy0x0grtu8509imb90uizpq6.deployments.mcp-agent.com/sse
-    </p>
-    <p style="margin: 4px 0; word-break: break-all;">
-      <strong><a href="./solar-system_server_python">Source code</a></strong>
-    </p>
-    <p style="margin: 8px 0;">
-      An example OpenAI app that lets users drive the 3D solar system UI from ChatGPT.
-    </p>
-  </div>
-</div>
+| App | Details |
+| --- | --- |
+| <img src="https://andrew-dev-s3.s3.us-east-1.amazonaws.com/chatgpt.com_c_68ed1840-477c-8329-9cd8-eac1ff333373(thumbnails).png" alt="Pizzaz" width="220"> |  <h3>🍕 <strong>Pizzaz</strong></h3> **Developer:** [OpenAI](https://openai.com/) <br> **MCP Url:** https://18t536mliucyeuhkkcnjdavxtyg66pgl.deployments.mcp-agent.com/sse <br> **Source:** [`./pizzaz_server_python`](./pizzaz_server_python) <br> An example OpenAI app that exposes a full suite of Pizzaz demo widgets so developers can experiment with UI-bearing tools in ChatGPT developer mode. |
+| <img src="https://andrew-dev-s3.s3.us-east-1.amazonaws.com/chatgpt.com_c_68ed2838-81d0-832f-a85b-821bc59d5219(thumbnails).png" alt="Solar System" width="220"> | <h3><strong>**🪐 Solar System**</strong></h3> **Developer:** [OpenAI](https://openai.com/) <br> **MCP Url:** https://1iolks0szy0x0grtu8509imb90uizpq6.deployments.mcp-agent.com/sse <br> **Source:** [`./solar-system_server_python`](./solar-system_server_python) <br> An example OpenAI app that lets users drive the 3D solar system UI from ChatGPT. |
 
 ## Contributing
 
