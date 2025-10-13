@@ -4,6 +4,8 @@
 
 This repository showcases example ChatGPT Apps, each of which is already hosted for you to try out.
 
+https://github.com/user-attachments/assets/cb50700c-5650-4f12-ac2e-2eabba5c8144
+
 ## What is a ChatGPT app?
 
 OpenAI introduced [apps in ChatGPT via the new Apps SDK](https://openai.com/index/introducing-apps-in-chatgpt/). Apps in ChatGPT allow users to naturally converse with applications to unlock richer experiences. These apps adhere to the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro), which is an open standard for connecting AI applications to external systems.
