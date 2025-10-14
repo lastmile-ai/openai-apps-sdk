@@ -1,5 +1,6 @@
 # OpenAI Apps SDK Examples
 
+[📘 Read the Docs](https://docs.mcp-agent.com/openai/deploy)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 This repository showcases example ChatGPT Apps, each of which is already hosted for you to try out.
