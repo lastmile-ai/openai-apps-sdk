@@ -38,4 +38,4 @@ To add these apps to ChatGPT, enable [developer mode](https://platform.openai.co
 > Make sure to have `/sse` at the end of your url to connect to your server
 
 ## Try a hosted version now
-MCP Server URL: `https://18t536mliucyeuhkkcnjdavxtyg66pgl.deployments.mcp-agent.com/sse`
+MCP Server URL: `https://pizzaz.demos.mcp-agent.com/sse`
